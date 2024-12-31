@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Structural\Registry;
+namespace Structural\Registry;
 
 class Service
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Proxy;
+namespace Structural\Proxy;
 
 class HeavyBankAccount implements BankAccount
 {

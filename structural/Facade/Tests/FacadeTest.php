@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Facade\Tests;
+namespace Structural\Facade\Tests;
 
 use DesignPatterns\Structural\Facade\Bios;
 use DesignPatterns\Structural\Facade\Facade;

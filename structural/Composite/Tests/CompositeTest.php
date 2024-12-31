@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Composite\Tests;
+namespace Structural\Composite\Tests;
 
 use DesignPatterns\Structural\Composite\Form;
 use DesignPatterns\Structural\Composite\TextElement;

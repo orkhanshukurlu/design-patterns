@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Command;
+namespace Behavioral\Command;
 
 /**
  * This concrete command tweaks receiver to add current date to messages

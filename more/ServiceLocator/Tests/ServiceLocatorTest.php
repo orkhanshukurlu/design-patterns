@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\ServiceLocator\Tests;
+namespace More\ServiceLocator\Tests;
 
 use DesignPatterns\More\ServiceLocator\LogService;
 use DesignPatterns\More\ServiceLocator\ServiceLocator;

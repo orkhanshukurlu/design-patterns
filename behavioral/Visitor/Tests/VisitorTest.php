@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Tests\Visitor\Tests;
+namespace Tests\Visitor\Tests;
 
 use DesignPatterns\Behavioral\Visitor\RecordingVisitor;
 use DesignPatterns\Behavioral\Visitor\User;

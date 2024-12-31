@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Iterator\Tests;
+namespace Behavioral\Iterator\Tests;
 
 use DesignPatterns\Behavioral\Iterator\Book;
 use DesignPatterns\Behavioral\Iterator\BookList;

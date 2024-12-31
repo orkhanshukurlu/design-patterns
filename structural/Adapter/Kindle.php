@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Adapter;
+namespace Structural\Adapter;
 
 /**
  * this is the adapted class. In production code, this could be a class from another package, some vendor code.

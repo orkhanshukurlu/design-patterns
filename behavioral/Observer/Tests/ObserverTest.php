@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Observer\Tests;
+namespace Behavioral\Observer\Tests;
 
 use DesignPatterns\Behavioral\Observer\User;
 use DesignPatterns\Behavioral\Observer\UserObserver;

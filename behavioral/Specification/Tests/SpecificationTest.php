@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Specification\Tests;
+namespace Behavioral\Specification\Tests;
 
 use DesignPatterns\Behavioral\Specification\Item;
 use DesignPatterns\Behavioral\Specification\NotSpecification;

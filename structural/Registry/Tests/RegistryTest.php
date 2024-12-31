@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Registry\Tests;
+namespace Structural\Registry\Tests;
 
 use InvalidArgumentException;
 use DesignPatterns\Structural\Registry\Registry;

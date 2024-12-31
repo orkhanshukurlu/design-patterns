@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Mediator;
+namespace Behavioral\Mediator;
 
 class UserRepository extends Colleague
 {

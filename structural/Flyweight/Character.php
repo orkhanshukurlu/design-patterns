@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Flyweight;
+namespace Structural\Flyweight;
 
 /**
  * Implements the flyweight interface and adds storage for intrinsic state, if any.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\FactoryMethod\Tests;
+namespace Creational\FactoryMethod\Tests;
 
 use DesignPatterns\Creational\FactoryMethod\FileLogger;
 use DesignPatterns\Creational\FactoryMethod\FileLoggerFactory;

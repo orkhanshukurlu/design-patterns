@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Command;
+namespace Behavioral\Command;
 
 /**
  * Receiver is a specific service with its own contract and can be only concrete.

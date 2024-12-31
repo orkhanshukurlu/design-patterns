@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Tests\Mediator\Tests;
+namespace Tests\Mediator\Tests;
 
 use DesignPatterns\Behavioral\Mediator\Ui;
 use DesignPatterns\Behavioral\Mediator\UserRepository;

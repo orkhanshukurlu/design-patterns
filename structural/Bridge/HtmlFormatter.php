@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Bridge;
+namespace Structural\Bridge;
 
 class HtmlFormatter implements Formatter
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\EAV;
+namespace More\EAV;
 
 class Value implements \Stringable
 {

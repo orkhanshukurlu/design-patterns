@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\Repository;
+namespace More\Repository;
 
 use OutOfBoundsException;
 

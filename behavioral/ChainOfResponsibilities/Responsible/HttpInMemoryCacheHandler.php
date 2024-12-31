@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible;
+namespace Behavioral\ChainOfResponsibilities\Responsible;
 
 use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
 use Psr\Http\Message\RequestInterface;

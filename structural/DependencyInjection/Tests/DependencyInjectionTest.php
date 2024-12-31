@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\DependencyInjection\Tests;
+namespace Structural\DependencyInjection\Tests;
 
 use DesignPatterns\Structural\DependencyInjection\DatabaseConfiguration;
 use DesignPatterns\Structural\DependencyInjection\DatabaseConnection;

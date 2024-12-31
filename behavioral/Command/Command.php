@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Command;
+namespace Behavioral\Command;
 
 interface Command
 {

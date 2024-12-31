@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Decorator\Tests;
+namespace Structural\Decorator\Tests;
 
 use DesignPatterns\Structural\Decorator\DoubleRoomBooking;
 use DesignPatterns\Structural\Decorator\ExtraBed;

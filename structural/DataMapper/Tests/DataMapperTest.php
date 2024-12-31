@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\DataMapper\Tests;
+namespace Structural\DataMapper\Tests;
 
 use InvalidArgumentException;
 use DesignPatterns\Structural\DataMapper\StorageAdapter;

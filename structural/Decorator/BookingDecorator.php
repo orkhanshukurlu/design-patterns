@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Decorator;
+namespace Structural\Decorator;
 
 abstract class BookingDecorator implements Booking
 {

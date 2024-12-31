@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\ServiceLocator;
+namespace More\ServiceLocator;
 
 use OutOfRangeException;
 use InvalidArgumentException;

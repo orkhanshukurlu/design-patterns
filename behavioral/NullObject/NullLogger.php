@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\NullObject;
+namespace Behavioral\NullObject;
 
 class NullLogger implements Logger
 {

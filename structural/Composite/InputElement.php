@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Composite;
+namespace Structural\Composite;
 
 class InputElement implements Renderable
 {

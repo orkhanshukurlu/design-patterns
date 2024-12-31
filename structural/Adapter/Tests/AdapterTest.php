@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Adapter\Tests;
+namespace Structural\Adapter\Tests;
 
 use DesignPatterns\Structural\Adapter\PaperBook;
 use DesignPatterns\Structural\Adapter\EBookAdapter;

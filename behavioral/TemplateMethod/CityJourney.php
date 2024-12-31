@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\TemplateMethod;
+namespace Behavioral\TemplateMethod;
 
 class CityJourney extends Journey
 {

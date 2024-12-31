@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\StaticFactory\Tests;
+namespace Creational\StaticFactory\Tests;
 
 use InvalidArgumentException;
 use DesignPatterns\Creational\StaticFactory\FormatNumber;

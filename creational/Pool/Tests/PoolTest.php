@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\Pool\Tests;
+namespace Creational\Pool\Tests;
 
 use DesignPatterns\Creational\Pool\WorkerPool;
 use PHPUnit\Framework\TestCase;

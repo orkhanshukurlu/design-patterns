@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\FluentInterface;
+namespace Structural\FluentInterface;
 
 class Sql implements \Stringable
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\Repository\Tests;
+namespace More\Repository\Tests;
 
 use OutOfBoundsException;
 use DesignPatterns\More\Repository\Domain\PostId;

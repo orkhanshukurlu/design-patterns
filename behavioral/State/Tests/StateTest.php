@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\State\Tests;
+namespace Behavioral\State\Tests;
 
 use DesignPatterns\Behavioral\State\ContextOrder;
 use PHPUnit\Framework\TestCase;

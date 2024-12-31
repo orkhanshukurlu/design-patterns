@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\NullObject;
+namespace Behavioral\NullObject;
 
 /**
  * Key feature: NullLogger must inherit from this interface like any other loggers

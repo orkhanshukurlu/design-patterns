@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Observer;
+namespace Behavioral\Observer;
 
 use SplSubject;
 use SplObjectStorage;

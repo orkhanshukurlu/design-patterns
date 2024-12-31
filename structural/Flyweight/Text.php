@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Flyweight;
+namespace Structural\Flyweight;
 
 /**
  * This is the interface that all flyweights need to implement

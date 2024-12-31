@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Flyweight\Tests;
+namespace Structural\Flyweight\Tests;
 
 use DesignPatterns\Structural\Flyweight\TextFactory;
 use PHPUnit\Framework\TestCase;

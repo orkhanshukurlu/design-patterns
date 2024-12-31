@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\NullObject\Tests;
+namespace Behavioral\NullObject\Tests;
 
 use DesignPatterns\Behavioral\NullObject\NullLogger;
 use DesignPatterns\Behavioral\NullObject\PrintLogger;

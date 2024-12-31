@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Structural\Flyweight;
+namespace Structural\Flyweight;
 
 class Word implements Text
 {

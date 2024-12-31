@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\StaticFactory;
+namespace Creational\StaticFactory;
 
 interface Formatter
 {

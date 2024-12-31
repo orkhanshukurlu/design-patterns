@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Visitor;
+namespace Behavioral\Visitor;
 
 class Group implements Role
 {

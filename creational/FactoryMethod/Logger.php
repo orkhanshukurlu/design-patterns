@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\FactoryMethod;
+namespace Creational\FactoryMethod;
 
 interface Logger
 {

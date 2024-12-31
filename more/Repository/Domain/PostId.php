@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\Repository\Domain;
+namespace More\Repository\Domain;
 
 use InvalidArgumentException;
 

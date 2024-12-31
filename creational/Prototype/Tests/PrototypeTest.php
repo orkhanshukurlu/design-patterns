@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\Prototype\Tests;
+namespace Creational\Prototype\Tests;
 
 use DesignPatterns\Creational\Prototype\BarBookPrototype;
 use DesignPatterns\Creational\Prototype\FooBookPrototype;

@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\More\ServiceLocator;
+namespace More\ServiceLocator;
 
 interface Service
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Structural\DataMapper;
+namespace Structural\DataMapper;
 
 use InvalidArgumentException;
 

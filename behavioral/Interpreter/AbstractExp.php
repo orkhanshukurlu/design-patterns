@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Interpreter;
+namespace Behavioral\Interpreter;
 
 abstract class AbstractExp
 {

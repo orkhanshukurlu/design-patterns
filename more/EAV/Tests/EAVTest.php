@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\More\EAV\Tests;
+namespace More\EAV\Tests;
 
 use DesignPatterns\More\EAV\Attribute;
 use DesignPatterns\More\EAV\Entity;

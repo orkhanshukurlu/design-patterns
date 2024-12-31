@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Interpreter\Tests;
+namespace Behavioral\Interpreter\Tests;
 
 use DesignPatterns\Behavioral\Interpreter\AndExp;
 use DesignPatterns\Behavioral\Interpreter\Context;

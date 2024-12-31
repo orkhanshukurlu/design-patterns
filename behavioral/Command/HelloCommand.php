@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Command;
+namespace Behavioral\Command;
 
 /**
  * This concrete command calls "print" on the Receiver, but an external

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Strategy;
+namespace Behavioral\Strategy;
 
 class Context
 {

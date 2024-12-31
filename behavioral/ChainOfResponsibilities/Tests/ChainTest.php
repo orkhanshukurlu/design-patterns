@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\ChainOfResponsibilities\Tests;
+namespace Behavioral\ChainOfResponsibilities\Tests;
 
 use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
 use DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\HttpInMemoryCacheHandler;

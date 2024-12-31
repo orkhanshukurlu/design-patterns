@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\State;
+namespace Behavioral\State;
 
 class CreateOrder implements StateOrder
 {

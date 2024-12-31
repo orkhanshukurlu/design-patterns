@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Specification;
+namespace Behavioral\Specification;
 
 class NotSpecification implements Specification
 {

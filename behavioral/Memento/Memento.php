@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\Memento;
+namespace Behavioral\Memento;
 
 class Memento
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\Builder;
+namespace Creational\Builder;
 
 use DesignPatterns\Creational\Builder\Parts\Door;
 use DesignPatterns\Creational\Builder\Parts\Engine;

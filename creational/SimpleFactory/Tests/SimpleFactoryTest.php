@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\SimpleFactory\Tests;
+namespace Creational\SimpleFactory\Tests;
 
 use DesignPatterns\Creational\SimpleFactory\Bicycle;
 use DesignPatterns\Creational\SimpleFactory\SimpleFactory;

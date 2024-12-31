@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Creational\Prototype;
+namespace Creational\Prototype;
 
 abstract class BookPrototype
 {
