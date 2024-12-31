@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Behavioral\NullObject\Tests;
 
-use DesignPatterns\Behavioral\NullObject\NullLogger;
-use DesignPatterns\Behavioral\NullObject\PrintLogger;
-use DesignPatterns\Behavioral\NullObject\Service;
+use Behavioral\NullObject\NullLogger;
+use Behavioral\NullObject\PrintLogger;
+use Behavioral\NullObject\Service;
 use PHPUnit\Framework\TestCase;
 
 class LoggerTest extends TestCase
@@ -21,7 +21,7 @@ class LoggerTest extends TestCase
     public function testStandardLogger()
     {
         $service = new Service(new PrintLogger());
-        $this->expectOutputString('We are in DesignPatterns\Behavioral\NullObject\Service::doSomething');
+        $this->expectOutputString('We are in Behavioral\NullObject\Service::doSomething');
         $service->doSomething();
     }
 }

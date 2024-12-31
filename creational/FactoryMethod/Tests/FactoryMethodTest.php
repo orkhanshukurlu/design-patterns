@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Creational\FactoryMethod\Tests;
 
-use DesignPatterns\Creational\FactoryMethod\FileLogger;
-use DesignPatterns\Creational\FactoryMethod\FileLoggerFactory;
-use DesignPatterns\Creational\FactoryMethod\StdoutLogger;
-use DesignPatterns\Creational\FactoryMethod\StdoutLoggerFactory;
+use Creational\FactoryMethod\FileLogger;
+use Creational\FactoryMethod\FileLoggerFactory;
+use Creational\FactoryMethod\StdoutLogger;
+use Creational\FactoryMethod\StdoutLoggerFactory;
 use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase

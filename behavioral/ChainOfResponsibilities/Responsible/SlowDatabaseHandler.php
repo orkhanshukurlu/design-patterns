@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\ChainOfResponsibilities\Responsible;
 
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
+use Behavioral\ChainOfResponsibilities\Handler;
 use Psr\Http\Message\RequestInterface;
 
 class SlowDatabaseHandler extends Handler

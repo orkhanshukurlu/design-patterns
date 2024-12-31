@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace More\ServiceLocator\Tests;
 
-use DesignPatterns\More\ServiceLocator\LogService;
-use DesignPatterns\More\ServiceLocator\ServiceLocator;
+use More\ServiceLocator\LogService;
+use More\ServiceLocator\ServiceLocator;
 use PHPUnit\Framework\TestCase;
 
 class ServiceLocatorTest extends TestCase

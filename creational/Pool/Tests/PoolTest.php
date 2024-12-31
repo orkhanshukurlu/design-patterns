@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Creational\Pool\Tests;
 
-use DesignPatterns\Creational\Pool\WorkerPool;
+use Creational\Pool\WorkerPool;
 use PHPUnit\Framework\TestCase;
 
 class PoolTest extends TestCase

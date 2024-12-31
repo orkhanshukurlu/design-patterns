@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Creational\Builder;
 
-use DesignPatterns\Creational\Builder\Parts\Vehicle;
+use Creational\Builder\Parts\Vehicle;
 
 /**
  * Director is part of the builder pattern. It knows the interface of the builder

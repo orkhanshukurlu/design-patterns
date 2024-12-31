@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Structural\DependencyInjection\Tests;
 
-use DesignPatterns\Structural\DependencyInjection\DatabaseConfiguration;
-use DesignPatterns\Structural\DependencyInjection\DatabaseConnection;
+use Structural\DependencyInjection\DatabaseConfiguration;
+use Structural\DependencyInjection\DatabaseConnection;
 use PHPUnit\Framework\TestCase;
 
 class DependencyInjectionTest extends TestCase

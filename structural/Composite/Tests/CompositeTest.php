@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Structural\Composite\Tests;
 
-use DesignPatterns\Structural\Composite\Form;
-use DesignPatterns\Structural\Composite\TextElement;
-use DesignPatterns\Structural\Composite\InputElement;
+use Structural\Composite\Form;
+use Structural\Composite\TextElement;
+use Structural\Composite\InputElement;
 use PHPUnit\Framework\TestCase;
 
 class CompositeTest extends TestCase

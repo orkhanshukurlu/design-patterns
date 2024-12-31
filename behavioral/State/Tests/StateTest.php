@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\State\Tests;
 
-use DesignPatterns\Behavioral\State\ContextOrder;
+use Behavioral\State\ContextOrder;
 use PHPUnit\Framework\TestCase;
 
 class StateTest extends TestCase

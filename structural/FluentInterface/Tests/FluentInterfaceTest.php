@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Structural\FluentInterface\Tests;
 
-use DesignPatterns\Structural\FluentInterface\Sql;
+use Structural\FluentInterface\Sql;
 use PHPUnit\Framework\TestCase;
 
 class FluentInterfaceTest extends TestCase

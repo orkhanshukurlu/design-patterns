@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Structural\Bridge\Tests;
 
-use DesignPatterns\Structural\Bridge\HelloWorldService;
-use DesignPatterns\Structural\Bridge\HtmlFormatter;
-use DesignPatterns\Structural\Bridge\PlainTextFormatter;
+use Structural\Bridge\HelloWorldService;
+use Structural\Bridge\HtmlFormatter;
+use Structural\Bridge\PlainTextFormatter;
 use PHPUnit\Framework\TestCase;
 
 class BridgeTest extends TestCase

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Behavioral\Iterator\Tests;
 
-use DesignPatterns\Behavioral\Iterator\Book;
-use DesignPatterns\Behavioral\Iterator\BookList;
+use Behavioral\Iterator\Book;
+use Behavioral\Iterator\BookList;
 use PHPUnit\Framework\TestCase;
 
 class IteratorTest extends TestCase

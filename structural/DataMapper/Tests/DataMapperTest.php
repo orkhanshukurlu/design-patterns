@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Structural\DataMapper\Tests;
 
 use InvalidArgumentException;
-use DesignPatterns\Structural\DataMapper\StorageAdapter;
-use DesignPatterns\Structural\DataMapper\User;
-use DesignPatterns\Structural\DataMapper\UserMapper;
+use Structural\DataMapper\StorageAdapter;
+use Structural\DataMapper\User;
+use Structural\DataMapper\UserMapper;
 use PHPUnit\Framework\TestCase;
 
 class DataMapperTest extends TestCase

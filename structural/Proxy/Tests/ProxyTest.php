@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Structural\Proxy\Tests;
 
-use DesignPatterns\Structural\Proxy\BankAccountProxy;
+use Structural\Proxy\BankAccountProxy;
 use PHPUnit\Framework\TestCase;
 
 class ProxyTest extends TestCase

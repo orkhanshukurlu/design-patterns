@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Behavioral\Command\Tests;
 
-use DesignPatterns\Behavioral\Command\HelloCommand;
-use DesignPatterns\Behavioral\Command\Invoker;
-use DesignPatterns\Behavioral\Command\Receiver;
+use Behavioral\Command\HelloCommand;
+use Behavioral\Command\Invoker;
+use Behavioral\Command\Receiver;
 use PHPUnit\Framework\TestCase;
 
 class CommandTest extends TestCase

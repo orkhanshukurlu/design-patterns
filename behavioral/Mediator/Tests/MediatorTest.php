@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Mediator\Tests;
 
-use DesignPatterns\Behavioral\Mediator\Ui;
-use DesignPatterns\Behavioral\Mediator\UserRepository;
-use DesignPatterns\Behavioral\Mediator\UserRepositoryUiMediator;
+use Behavioral\Mediator\Ui;
+use Behavioral\Mediator\UserRepository;
+use Behavioral\Mediator\UserRepositoryUiMediator;
 use PHPUnit\Framework\TestCase;
 
 class MediatorTest extends TestCase

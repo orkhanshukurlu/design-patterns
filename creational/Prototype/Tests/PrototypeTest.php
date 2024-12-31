@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Creational\Prototype\Tests;
 
-use DesignPatterns\Creational\Prototype\BarBookPrototype;
-use DesignPatterns\Creational\Prototype\FooBookPrototype;
+use Creational\Prototype\BarBookPrototype;
+use Creational\Prototype\FooBookPrototype;
 use PHPUnit\Framework\TestCase;
 
 class PrototypeTest extends TestCase

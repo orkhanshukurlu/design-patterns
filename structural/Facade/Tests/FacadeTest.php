@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Structural\Facade\Tests;
 
-use DesignPatterns\Structural\Facade\Bios;
-use DesignPatterns\Structural\Facade\Facade;
-use DesignPatterns\Structural\Facade\OperatingSystem;
+use Structural\Facade\Bios;
+use Structural\Facade\Facade;
+use Structural\Facade\OperatingSystem;
 use PHPUnit\Framework\TestCase;
 
 class FacadeTest extends TestCase

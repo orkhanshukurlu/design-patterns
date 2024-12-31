@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Behavioral\Specification\Tests;
 
-use DesignPatterns\Behavioral\Specification\Item;
-use DesignPatterns\Behavioral\Specification\NotSpecification;
-use DesignPatterns\Behavioral\Specification\OrSpecification;
-use DesignPatterns\Behavioral\Specification\AndSpecification;
-use DesignPatterns\Behavioral\Specification\PriceSpecification;
+use Behavioral\Specification\Item;
+use Behavioral\Specification\NotSpecification;
+use Behavioral\Specification\OrSpecification;
+use Behavioral\Specification\AndSpecification;
+use Behavioral\Specification\PriceSpecification;
 use PHPUnit\Framework\TestCase;
 
 class SpecificationTest extends TestCase

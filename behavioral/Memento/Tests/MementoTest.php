@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Behavioral\Memento\Tests;
 
-use DesignPatterns\Behavioral\Memento\State;
-use DesignPatterns\Behavioral\Memento\Ticket;
+use Behavioral\Memento\State;
+use Behavioral\Memento\Ticket;
 use PHPUnit\Framework\TestCase;
 
 class MementoTest extends TestCase

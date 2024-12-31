@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Structural\Registry\Tests;
 
 use InvalidArgumentException;
-use DesignPatterns\Structural\Registry\Registry;
-use DesignPatterns\Structural\Registry\Service;
+use Structural\Registry\Registry;
+use Structural\Registry\Service;
 use PHPUnit\Framework\TestCase;
 
 class RegistryTest extends TestCase

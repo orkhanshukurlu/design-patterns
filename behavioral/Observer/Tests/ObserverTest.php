@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Behavioral\Observer\Tests;
 
-use DesignPatterns\Behavioral\Observer\User;
-use DesignPatterns\Behavioral\Observer\UserObserver;
+use Behavioral\Observer\User;
+use Behavioral\Observer\UserObserver;
 use PHPUnit\Framework\TestCase;
 
 class ObserverTest extends TestCase

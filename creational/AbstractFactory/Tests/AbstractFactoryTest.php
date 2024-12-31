@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory\Tests;
 
-use DesignPatterns\Creational\AbstractFactory\CsvWriter;
-use DesignPatterns\Creational\AbstractFactory\JsonWriter;
-use DesignPatterns\Creational\AbstractFactory\UnixWriterFactory;
-use DesignPatterns\Creational\AbstractFactory\WinWriterFactory;
-use DesignPatterns\Creational\AbstractFactory\WriterFactory;
+use Creational\AbstractFactory\CsvWriter;
+use Creational\AbstractFactory\JsonWriter;
+use Creational\AbstractFactory\UnixWriterFactory;
+use Creational\AbstractFactory\WinWriterFactory;
+use Creational\AbstractFactory\WriterFactory;
 use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Structural\Decorator\Tests;
 
-use DesignPatterns\Structural\Decorator\DoubleRoomBooking;
-use DesignPatterns\Structural\Decorator\ExtraBed;
-use DesignPatterns\Structural\Decorator\WiFi;
+use Structural\Decorator\DoubleRoomBooking;
+use Structural\Decorator\ExtraBed;
+use Structural\Decorator\WiFi;
 use PHPUnit\Framework\TestCase;
 
 class DecoratorTest extends TestCase

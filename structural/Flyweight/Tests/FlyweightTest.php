@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Structural\Flyweight\Tests;
 
-use DesignPatterns\Structural\Flyweight\TextFactory;
+use Structural\Flyweight\TextFactory;
 use PHPUnit\Framework\TestCase;
 
 class FlyweightTest extends TestCase

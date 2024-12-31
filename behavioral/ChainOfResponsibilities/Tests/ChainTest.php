@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Behavioral\ChainOfResponsibilities\Tests;
 
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\HttpInMemoryCacheHandler;
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\SlowDatabaseHandler;
+use Behavioral\ChainOfResponsibilities\Handler;
+use Behavioral\ChainOfResponsibilities\Responsible\HttpInMemoryCacheHandler;
+use Behavioral\ChainOfResponsibilities\Responsible\SlowDatabaseHandler;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;

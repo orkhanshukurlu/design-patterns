@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace More\EAV\Tests;
 
-use DesignPatterns\More\EAV\Attribute;
-use DesignPatterns\More\EAV\Entity;
-use DesignPatterns\More\EAV\Value;
+use More\EAV\Attribute;
+use More\EAV\Entity;
+use More\EAV\Value;
 use PHPUnit\Framework\TestCase;
 
 class EAVTest extends TestCase

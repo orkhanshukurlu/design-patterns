@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Creational\Singleton\Tests;
 
-use DesignPatterns\Creational\Singleton\Singleton;
+use Creational\Singleton\Singleton;
 use PHPUnit\Framework\TestCase;
 
 class SingletonTest extends TestCase

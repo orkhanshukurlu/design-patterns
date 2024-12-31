@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Visitor\Tests;
 
-use DesignPatterns\Behavioral\Visitor\RecordingVisitor;
-use DesignPatterns\Behavioral\Visitor\User;
-use DesignPatterns\Behavioral\Visitor\Group;
-use DesignPatterns\Behavioral\Visitor\Role;
-use DesignPatterns\Behavioral\Visitor;
+use Behavioral\Visitor\RecordingVisitor;
+use Behavioral\Visitor\User;
+use Behavioral\Visitor\Group;
+use Behavioral\Visitor\Role;
+use Behavioral\Visitor;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase

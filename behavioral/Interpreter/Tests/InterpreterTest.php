@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Behavioral\Interpreter\Tests;
 
-use DesignPatterns\Behavioral\Interpreter\AndExp;
-use DesignPatterns\Behavioral\Interpreter\Context;
-use DesignPatterns\Behavioral\Interpreter\OrExp;
-use DesignPatterns\Behavioral\Interpreter\VariableExp;
+use Behavioral\Interpreter\AndExp;
+use Behavioral\Interpreter\Context;
+use Behavioral\Interpreter\OrExp;
+use Behavioral\Interpreter\VariableExp;
 use PHPUnit\Framework\TestCase;
 
 class InterpreterTest extends TestCase

@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace More\Repository\Tests;
 
 use OutOfBoundsException;
-use DesignPatterns\More\Repository\Domain\PostId;
-use DesignPatterns\More\Repository\Domain\PostStatus;
-use DesignPatterns\More\Repository\InMemoryPersistence;
-use DesignPatterns\More\Repository\Domain\Post;
-use DesignPatterns\More\Repository\PostRepository;
+use More\Repository\Domain\PostId;
+use More\Repository\Domain\PostStatus;
+use More\Repository\InMemoryPersistence;
+use More\Repository\Domain\Post;
+use More\Repository\PostRepository;
 use PHPUnit\Framework\TestCase;
 
 class PostRepositoryTest extends TestCase
