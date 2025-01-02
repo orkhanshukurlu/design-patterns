@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Creational\FactoryMethod;
 
-class FileLoggerFactory implements LoggerFactory
+readonly class FileLoggerFactory implements LoggerFactory
 {
     public function __construct(private string $filePath)
     {
