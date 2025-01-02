@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Behavioral\Interpreter;
 
-/**
- * This NoTerminalExpression
- */
 class OrExp extends AbstractExp
 {
-    public function __construct(private AbstractExp $first, private AbstractExp $second)
+    public function __construct(private readonly AbstractExp $first, private readonly AbstractExp $second)
     {
     }
 

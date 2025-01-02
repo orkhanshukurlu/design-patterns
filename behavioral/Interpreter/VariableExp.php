@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Behavioral\Interpreter;
 
-/**
- * This TerminalExpression
- */
 class VariableExp extends AbstractExp
 {
-    public function __construct(private string $name)
+    public function __construct(private readonly string $name)
     {
     }
 
