@@ -6,9 +6,9 @@ namespace Creational\Builder;
 
 use Creational\Builder\Parts\Door;
 use Creational\Builder\Parts\Engine;
-use Creational\Builder\Parts\Wheel;
 use Creational\Builder\Parts\Truck;
 use Creational\Builder\Parts\Vehicle;
+use Creational\Builder\Parts\Wheel;
 
 class TruckBuilder implements Builder
 {
