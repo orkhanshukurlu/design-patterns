@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace More\EAV;
 
 use SplObjectStorage;
+use Stringable;
 
-class Attribute implements \Stringable
+class Attribute implements Stringable
 {
     private SplObjectStorage $values;
 
-    public function __construct(private string $name)
+    public function __construct(private readonly string $name)
     {
         $this->values = new SplObjectStorage();
     }

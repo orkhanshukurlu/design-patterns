@@ -8,15 +8,9 @@ use SplObjectStorage;
 
 class Entity implements \Stringable
 {
-    /**
-     * @var SplObjectStorage<Value,Value>
-     */
-    private $values;
+    private SplObjectStorage $values;
 
-    /**
-     * @param Value[] $values
-     */
-    public function __construct(private string $name, array $values)
+    public function __construct(private readonly string $name, array $values)
     {
         $this->values = new SplObjectStorage();
 

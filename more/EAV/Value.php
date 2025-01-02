@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace More\EAV;
 
-class Value implements \Stringable
+use Stringable;
+
+readonly class Value implements Stringable
 {
     public function __construct(private Attribute $attribute, private string $name)
     {
@@ -13,6 +15,6 @@ class Value implements \Stringable
 
     public function __toString(): string
     {
-        return sprintf('%s: %s', (string) $this->attribute, $this->name);
+        return sprintf('%s: %s', $this->attribute, $this->name);
     }
 }
