@@ -4,17 +4,14 @@ declare(strict_types=1);
 
 namespace Behavioral\Observer;
 
-use SplSubject;
 use SplObjectStorage;
 use SplObserver;
+use SplSubject;
 
-/**
- * User implements the observed object (called Subject), it maintains a list of observers and sends notifications to
- * them in case changes are made on the User object
- */
 class User implements SplSubject
 {
     private SplObjectStorage $observers;
+
     private $email;
 
     public function __construct()
@@ -40,7 +37,6 @@ class User implements SplSubject
 
     public function notify(): void
     {
-        /** @var SplObserver $observer */
         foreach ($this->observers as $observer) {
             $observer->update($this);
         }
