@@ -4,19 +4,13 @@ declare(strict_types=1);
 
 namespace Behavioral\Command;
 
-/**
- * Receiver is a specific service with its own contract and can be only concrete.
- */
 class Receiver
 {
     private bool $enableDate = false;
 
-    /**
-     * @var string[]
-     */
     private array $output = [];
 
-    public function write(string $str)
+    public function write(string $str): void
     {
         if ($this->enableDate) {
             $str .= ' [' . date('Y-m-d') . ']';
@@ -30,18 +24,12 @@ class Receiver
         return join("\n", $this->output);
     }
 
-    /**
-     * Enable receiver to display message date
-     */
-    public function enableDate()
+    public function enableDate(): void
     {
         $this->enableDate = true;
     }
 
-    /**
-     * Disable receiver to display message date
-     */
-    public function disableDate()
+    public function disableDate(): void
     {
         $this->enableDate = false;
     }
