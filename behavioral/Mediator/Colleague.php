@@ -8,7 +8,7 @@ abstract class Colleague
 {
     protected Mediator $mediator;
 
-    final public function setMediator(Mediator $mediator)
+    final public function setMediator(Mediator $mediator): void
     {
         $this->mediator = $mediator;
     }

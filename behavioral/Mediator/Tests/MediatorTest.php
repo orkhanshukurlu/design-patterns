@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Mediator\Tests;
+namespace Behavioral\Mediator\Tests;
 
 use Behavioral\Mediator\Ui;
 use Behavioral\Mediator\UserRepository;
@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class MediatorTest extends TestCase
 {
-    public function testOutputHelloWorld()
+    public function testOutputHelloWorld(): void
     {
         $mediator = new UserRepositoryUiMediator(new UserRepository(), new Ui());
 

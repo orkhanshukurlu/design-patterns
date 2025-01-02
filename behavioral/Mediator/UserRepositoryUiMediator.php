@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Mediator;
 
-class UserRepositoryUiMediator implements Mediator
+readonly class UserRepositoryUiMediator implements Mediator
 {
     public function __construct(private UserRepository $userRepository, private Ui $ui)
     {
@@ -12,7 +12,7 @@ class UserRepositoryUiMediator implements Mediator
         $this->ui->setMediator($this);
     }
 
-    public function printInfoAbout(string $user)
+    public function printInfoAbout(string $user): void
     {
         $this->ui->outputUserInfo($user);
     }
