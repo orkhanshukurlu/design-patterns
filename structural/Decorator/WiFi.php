@@ -6,7 +6,7 @@ namespace Structural\Decorator;
 
 class WiFi extends BookingDecorator
 {
-    private const PRICE = 2;
+    private const int PRICE = 2;
 
     public function calculatePrice(): int
     {

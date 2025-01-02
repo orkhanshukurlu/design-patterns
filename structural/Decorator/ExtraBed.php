@@ -6,7 +6,7 @@ namespace Structural\Decorator;
 
 class ExtraBed extends BookingDecorator
 {
-    private const PRICE = 30;
+    private const int PRICE = 30;
 
     public function calculatePrice(): int
     {

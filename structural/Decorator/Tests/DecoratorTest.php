@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Structural\Decorator\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Structural\Decorator\DoubleRoomBooking;
 use Structural\Decorator\ExtraBed;
 use Structural\Decorator\WiFi;
-use PHPUnit\Framework\TestCase;
 
 class DecoratorTest extends TestCase
 {
-    public function testCanCalculatePriceForBasicDoubleRoomBooking()
+    public function testCanCalculatePriceForBasicDoubleRoomBooking(): void
     {
         $booking = new DoubleRoomBooking();
 
@@ -19,7 +19,7 @@ class DecoratorTest extends TestCase
         $this->assertSame('double room', $booking->getDescription());
     }
 
-    public function testCanCalculatePriceForDoubleRoomBookingWithWiFi()
+    public function testCanCalculatePriceForDoubleRoomBookingWithWiFi(): void
     {
         $booking = new DoubleRoomBooking();
         $booking = new WiFi($booking);
@@ -28,7 +28,7 @@ class DecoratorTest extends TestCase
         $this->assertSame('double room with wifi', $booking->getDescription());
     }
 
-    public function testCanCalculatePriceForDoubleRoomBookingWithWiFiAndExtraBed()
+    public function testCanCalculatePriceForDoubleRoomBookingWithWiFiAndExtraBed(): void
     {
         $booking = new DoubleRoomBooking();
         $booking = new WiFi($booking);
