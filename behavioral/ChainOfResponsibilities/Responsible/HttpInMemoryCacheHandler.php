@@ -9,7 +9,7 @@ use Psr\Http\Message\RequestInterface;
 
 class HttpInMemoryCacheHandler extends Handler
 {
-    public function __construct(private array $data, ?Handler $successor = null)
+    public function __construct(private readonly array $data, ?Handler $successor = null)
     {
         parent::__construct($successor);
     }
