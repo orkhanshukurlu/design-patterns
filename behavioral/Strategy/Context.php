@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Strategy;
 
-class Context
+readonly class Context
 {
     public function __construct(private Comparator $comparator)
     {

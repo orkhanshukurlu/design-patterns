@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class StrategyTest extends TestCase
 {
-    public function provideIntegers()
+    public function provideIntegers(): array
     {
         return [
             [
@@ -25,7 +25,7 @@ class StrategyTest extends TestCase
         ];
     }
 
-    public function provideDates()
+    public function provideDates(): array
     {
         return [
             [
@@ -39,13 +39,7 @@ class StrategyTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider provideIntegers
-     *
-     * @param array $collection
-     * @param array $expected
-     */
-    public function testIdComparator($collection, $expected)
+    public function testIdComparator(array $collection, array $expected): void
     {
         $obj = new Context(new IdComparator());
         $elements = $obj->executeStrategy($collection);
@@ -54,13 +48,7 @@ class StrategyTest extends TestCase
         $this->assertSame($expected, $firstElement);
     }
 
-    /**
-     * @dataProvider provideDates
-     *
-     * @param array $collection
-     * @param array $expected
-     */
-    public function testDateComparator($collection, $expected)
+    public function testDateComparator(array $collection, array $expected): void
     {
         $obj = new Context(new DateComparator());
         $elements = $obj->executeStrategy($collection);

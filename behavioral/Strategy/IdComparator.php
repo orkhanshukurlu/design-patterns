@@ -6,7 +6,7 @@ namespace Behavioral\Strategy;
 
 class IdComparator implements Comparator
 {
-    public function compare($a, $b): int
+    public function compare(mixed $a, mixed $b): int
     {
         return $a['id'] <=> $b['id'];
     }

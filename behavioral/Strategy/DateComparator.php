@@ -8,7 +8,7 @@ use DateTime;
 
 class DateComparator implements Comparator
 {
-    public function compare($a, $b): int
+    public function compare(mixed $a, mixed $b): int
     {
         $aDate = new DateTime($a['date']);
         $bDate = new DateTime($b['date']);
