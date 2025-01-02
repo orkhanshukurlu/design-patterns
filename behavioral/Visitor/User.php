@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Visitor;
 
-class User implements Role
+readonly class User implements Role
 {
     public function __construct(private string $name)
     {
@@ -15,7 +15,7 @@ class User implements Role
         return sprintf('User %s', $this->name);
     }
 
-    public function accept(RoleVisitor $visitor)
+    public function accept(RoleVisitor $visitor): void
     {
         $visitor->visitUser($this);
     }

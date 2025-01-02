@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Visitor;
 
-class Group implements Role
+readonly class Group implements Role
 {
     public function __construct(private string $name)
     {
@@ -15,7 +15,7 @@ class Group implements Role
         return sprintf('Group: %s', $this->name);
     }
 
-    public function accept(RoleVisitor $visitor)
+    public function accept(RoleVisitor $visitor): void
     {
         $visitor->visitGroup($this);
     }

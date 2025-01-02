@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Visitor\Tests;
+namespace Behavioral\Visitor\Tests;
 
-use Behavioral\Visitor\RecordingVisitor;
-use Behavioral\Visitor\User;
 use Behavioral\Visitor\Group;
+use Behavioral\Visitor\RecordingVisitor;
 use Behavioral\Visitor\Role;
-use Behavioral\Visitor;
+use Behavioral\Visitor\User;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase
@@ -20,7 +19,7 @@ class VisitorTest extends TestCase
         $this->visitor = new RecordingVisitor();
     }
 
-    public function provideRoles()
+    public function provideRoles(): array
     {
         return [
             [new User('Dominik')],
@@ -28,10 +27,7 @@ class VisitorTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider provideRoles
-     */
-    public function testVisitSomeRole(Role $role)
+    public function testVisitSomeRole(Role $role): void
     {
         $role->accept($this->visitor);
         $this->assertSame($role, $this->visitor->getVisited()[0]);
