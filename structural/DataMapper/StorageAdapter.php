@@ -4,16 +4,13 @@ declare(strict_types=1);
 
 namespace Structural\DataMapper;
 
-class StorageAdapter
+readonly class StorageAdapter
 {
     public function __construct(private array $data)
     {
     }
 
-    /**
-     * @return array|null
-     */
-    public function find(int $id)
+    public function find(int $id): ?array
     {
         if (isset($this->data[$id])) {
             return $this->data[$id];

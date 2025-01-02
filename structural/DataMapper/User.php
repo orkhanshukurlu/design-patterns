@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Structural\DataMapper;
 
-class User
+readonly class User
 {
     public static function fromState(array $state): User
     {
-        // validate state before accessing keys!
-
         return new self(
             $state['username'],
             $state['email']
