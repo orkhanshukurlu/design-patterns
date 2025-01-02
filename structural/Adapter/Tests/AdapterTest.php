@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Structural\Adapter\Tests;
 
-use Structural\Adapter\PaperBook;
+use PHPUnit\Framework\TestCase;
 use Structural\Adapter\EBookAdapter;
 use Structural\Adapter\Kindle;
-use PHPUnit\Framework\TestCase;
+use Structural\Adapter\PaperBook;
 
 class AdapterTest extends TestCase
 {
-    public function testCanTurnPageOnBook()
+    public function testCanTurnPageOnBook(): void
     {
         $book = new PaperBook();
         $book->open();
@@ -20,7 +20,7 @@ class AdapterTest extends TestCase
         $this->assertSame(2, $book->getPage());
     }
 
-    public function testCanTurnPageOnKindleLikeInANormalBook()
+    public function testCanTurnPageOnKindleLikeInANormalBook(): void
     {
         $kindle = new Kindle();
         $book = new EBookAdapter($kindle);
