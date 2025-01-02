@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Structural\FluentInterface;
 
-class Sql implements \Stringable
+use Stringable;
+
+class Sql implements Stringable
 {
     private array $fields = [];
+
     private array $from = [];
+
     private array $where = [];
 
     public function select(array $fields): Sql
