@@ -7,11 +7,12 @@ namespace Behavioral\Strategy\Tests;
 use Behavioral\Strategy\Context;
 use Behavioral\Strategy\DateComparator;
 use Behavioral\Strategy\IdComparator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class StrategyTest extends TestCase
 {
-    public function provideIntegers(): array
+    public static function provideIntegers(): array
     {
         return [
             [
@@ -25,7 +26,7 @@ class StrategyTest extends TestCase
         ];
     }
 
-    public function provideDates(): array
+    public static function provideDates(): array
     {
         return [
             [
@@ -39,6 +40,7 @@ class StrategyTest extends TestCase
         ];
     }
 
+    #[DataProvider('provideIntegers')]
     public function testIdComparator(array $collection, array $expected): void
     {
         $obj = new Context(new IdComparator());
@@ -48,6 +50,7 @@ class StrategyTest extends TestCase
         $this->assertSame($expected, $firstElement);
     }
 
+    #[DataProvider('provideDates')]
     public function testDateComparator(array $collection, array $expected): void
     {
         $obj = new Context(new DateComparator());

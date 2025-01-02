@@ -14,7 +14,7 @@ class FacadeTest extends TestCase
     public function testComputerOn(): void
     {
         $os = $this->createMock(OperatingSystem::class);
-        $os->method('getName')->will($this->returnValue('Linux'));
+        $os->method('getName')->willReturn('Linux');
 
         $bios = $this->createMock(Bios::class);
         $bios->method('launch')->with($os);

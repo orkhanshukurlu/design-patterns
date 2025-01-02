@@ -9,11 +9,12 @@ use Creational\AbstractFactory\JsonWriter;
 use Creational\AbstractFactory\UnixWriterFactory;
 use Creational\AbstractFactory\WinWriterFactory;
 use Creational\AbstractFactory\WriterFactory;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
-    public function provideFactory(): array
+    public static function provideFactory(): array
     {
         return [
             [new UnixWriterFactory()],
@@ -21,6 +22,7 @@ class AbstractFactoryTest extends TestCase
         ];
     }
 
+    #[DataProvider('provideFactory')]
     public function testCanCreateCsvWriterOnUnix(WriterFactory $writerFactory): void
     {
         $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());

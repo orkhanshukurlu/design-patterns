@@ -8,6 +8,7 @@ use Behavioral\Visitor\Group;
 use Behavioral\Visitor\RecordingVisitor;
 use Behavioral\Visitor\Role;
 use Behavioral\Visitor\User;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase
@@ -19,7 +20,7 @@ class VisitorTest extends TestCase
         $this->visitor = new RecordingVisitor();
     }
 
-    public function provideRoles(): array
+    public static function provideRoles(): array
     {
         return [
             [new User('Dominik')],
@@ -27,6 +28,7 @@ class VisitorTest extends TestCase
         ];
     }
 
+    #[DataProvider('provideRoles')]
     public function testVisitSomeRole(Role $role): void
     {
         $role->accept($this->visitor);
