@@ -13,18 +13,15 @@ use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
-    public function provideFactory()
+    public function provideFactory(): array
     {
         return [
             [new UnixWriterFactory()],
-            [new WinWriterFactory()]
+            [new WinWriterFactory()],
         ];
     }
 
-    /**
-     * @dataProvider provideFactory
-     */
-    public function testCanCreateCsvWriterOnUnix(WriterFactory $writerFactory)
+    public function testCanCreateCsvWriterOnUnix(WriterFactory $writerFactory): void
     {
         $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
         $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
