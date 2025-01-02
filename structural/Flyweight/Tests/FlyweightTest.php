@@ -4,17 +4,43 @@ declare(strict_types=1);
 
 namespace Structural\Flyweight\Tests;
 
-use Structural\Flyweight\TextFactory;
 use PHPUnit\Framework\TestCase;
+use Structural\Flyweight\TextFactory;
 
 class FlyweightTest extends TestCase
 {
-    private array $characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
-        'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    private array $characters = [
+        'a',
+        'b',
+        'c',
+        'd',
+        'e',
+        'f',
+        'g',
+        'h',
+        'i',
+        'j',
+        'k',
+        'l',
+        'm',
+        'n',
+        'o',
+        'p',
+        'q',
+        'r',
+        's',
+        't',
+        'u',
+        'v',
+        'w',
+        'x',
+        'y',
+        'z',
+    ];
 
     private array $fonts = ['Arial', 'Times New Roman', 'Verdana', 'Helvetica'];
 
-    public function testFlyweight()
+    public function testFlyweight(): void
     {
         $factory = new TextFactory();
 
@@ -36,9 +62,6 @@ class FlyweightTest extends TestCase
             $this->assertSame(sprintf('Word %s with font foobar', $word), $rendered);
         }
 
-        // Flyweight pattern ensures that instances are shared
-        // instead of having hundreds of thousands of individual objects
-        // there must be one instance for every char that has been reused for displaying in different fonts
         $this->assertCount(count($this->characters) + count($this->fonts), $factory);
     }
 }

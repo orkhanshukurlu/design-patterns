@@ -2,7 +2,7 @@
 
 namespace Structural\Flyweight;
 
-class Word implements Text
+readonly class Word implements Text
 {
     public function __construct(private string $name)
     {
