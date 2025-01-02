@@ -8,21 +8,15 @@ use InvalidArgumentException;
 
 abstract class Registry
 {
-    public const LOGGER = 'logger';
+    public const string LOGGER = 'logger';
 
-    /**
-     * this introduces global state in your application which can not be mocked up for testing
-     * and is therefor considered an anti-pattern! Use dependency injection instead!
-     *
-     * @var Service[]
-     */
     private static array $services = [];
 
     private static array $allowedKeys = [
         self::LOGGER,
     ];
 
-    final public static function set(string $key, Service $value)
+    final public static function set(string $key, Service $value): void
     {
         if (!in_array($key, self::$allowedKeys)) {
             throw new InvalidArgumentException('Invalid key given');
