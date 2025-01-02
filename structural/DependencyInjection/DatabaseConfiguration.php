@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Structural\DependencyInjection;
 
-class DatabaseConfiguration
+readonly class DatabaseConfiguration
 {
     public function __construct(
         private string $host,

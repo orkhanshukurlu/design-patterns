@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Structural\DependencyInjection\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Structural\DependencyInjection\DatabaseConfiguration;
 use Structural\DependencyInjection\DatabaseConnection;
-use PHPUnit\Framework\TestCase;
 
 class DependencyInjectionTest extends TestCase
 {
-    public function testDependencyInjection()
+    public function testDependencyInjection(): void
     {
         $config = new DatabaseConfiguration('localhost', 3306, 'user', '1234');
         $connection = new DatabaseConnection($config);
