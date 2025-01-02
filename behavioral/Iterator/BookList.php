@@ -9,18 +9,16 @@ use Iterator;
 
 class BookList implements Countable, Iterator
 {
-    /**
-     * @var Book[]
-     */
     private array $books = [];
+
     private int $currentIndex = 0;
 
-    public function addBook(Book $book)
+    public function addBook(Book $book): void
     {
         $this->books[] = $book;
     }
 
-    public function removeBook(Book $bookToRemove)
+    public function removeBook(Book $bookToRemove): void
     {
         foreach ($this->books as $key => $book) {
             if ($book->getAuthorAndTitle() === $bookToRemove->getAuthorAndTitle()) {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Iterator;
 
-class Book
+readonly class Book
 {
     public function __construct(private string $title, private string $author)
     {
