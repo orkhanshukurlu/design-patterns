@@ -7,6 +7,7 @@ namespace Creational\Prototype;
 abstract class BookPrototype
 {
     protected string $title;
+
     protected string $category;
 
     abstract public function __clone();
