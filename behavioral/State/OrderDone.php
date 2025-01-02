@@ -8,7 +8,6 @@ class OrderDone implements StateOrder
 {
     public function proceedToNext(ContextOrder $context): void
     {
-        // there is nothing more to do
     }
 
     public function toString(): string
