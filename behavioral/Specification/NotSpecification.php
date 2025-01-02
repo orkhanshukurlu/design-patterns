@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Specification;
 
-class NotSpecification implements Specification
+readonly class NotSpecification implements Specification
 {
     public function __construct(private Specification $specification)
     {

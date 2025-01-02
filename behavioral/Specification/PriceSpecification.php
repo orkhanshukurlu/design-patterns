@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Specification;
 
-class PriceSpecification implements Specification
+readonly class PriceSpecification implements Specification
 {
     public function __construct(private ?float $minPrice, private ?float $maxPrice)
     {

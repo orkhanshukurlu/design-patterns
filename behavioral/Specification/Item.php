@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Behavioral\Specification;
 
-class Item
+readonly class Item
 {
     public function __construct(private float $price)
     {
