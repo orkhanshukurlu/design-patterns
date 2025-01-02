@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Structural\Composite\Tests;
 
-use Structural\Composite\Form;
-use Structural\Composite\TextElement;
-use Structural\Composite\InputElement;
 use PHPUnit\Framework\TestCase;
+use Structural\Composite\Form;
+use Structural\Composite\InputElement;
+use Structural\Composite\TextElement;
 
 class CompositeTest extends TestCase
 {
-    public function testRender()
+    public function testRender(): void
     {
         $form = new Form();
         $form->addElement(new TextElement('Email:'));
@@ -20,9 +20,6 @@ class CompositeTest extends TestCase
         $embed->addElement(new TextElement('Password:'));
         $embed->addElement(new InputElement());
         $form->addElement($embed);
-
-        // This is just an example, in a real world scenario it is important to remember that web browsers do not
-        // currently support nested forms
 
         $this->assertSame(
             '<form>Email:<input type="text" /><form>Password:<input type="text" /></form></form>',
