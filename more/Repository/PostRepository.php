@@ -4,20 +4,11 @@ declare(strict_types=1);
 
 namespace More\Repository;
 
-use OutOfBoundsException;
 use More\Repository\Domain\Post;
 use More\Repository\Domain\PostId;
+use OutOfBoundsException;
 
-/**
- * This class is situated between Entity layer (class Post) and access object layer (Persistence).
- *
- * Repository encapsulates the set of objects persisted in a data store and the operations performed over them
- * providing a more object-oriented view of the persistence layer
- *
- * Repository also supports the objective of achieving a clean separation and one-way dependency
- * between the domain and data mapping layers
- */
-class PostRepository
+readonly class PostRepository
 {
     public function __construct(private Persistence $persistence)
     {
@@ -39,7 +30,7 @@ class PostRepository
         return Post::fromState($arrayData);
     }
 
-    public function save(Post $post)
+    public function save(Post $post): void
     {
         $this->persistence->persist([
             'id' => $post->getId()->toInt(),

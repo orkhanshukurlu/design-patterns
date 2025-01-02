@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace More\Repository\Domain;
 
-class Post
+readonly class Post
 {
     public static function draft(PostId $id, string $title, string $text): Post
     {
