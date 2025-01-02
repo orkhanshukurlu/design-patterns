@@ -6,22 +6,15 @@ namespace Structural\Proxy;
 
 class HeavyBankAccount implements BankAccount
 {
-    /**
-     * @var int[]
-     */
     private array $transactions = [];
 
-    public function deposit(int $amount)
+    public function deposit(int $amount): void
     {
         $this->transactions[] = $amount;
     }
 
     public function getBalance(): int
     {
-        // this is the heavy part, imagine all the transactions even from
-        // years and decades ago must be fetched from a database or web service
-        // and the balance must be calculated from it
-
         return array_sum($this->transactions);
     }
 }
