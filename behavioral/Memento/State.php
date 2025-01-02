@@ -5,19 +5,20 @@ declare(strict_types=1);
 namespace Behavioral\Memento;
 
 use InvalidArgumentException;
+use Stringable;
 
-class State implements \Stringable
+class State implements Stringable
 {
-    public const STATE_CREATED = 'created';
-    public const STATE_OPENED = 'opened';
-    public const STATE_ASSIGNED = 'assigned';
-    public const STATE_CLOSED = 'closed';
+    public const string STATE_CREATED = 'created';
+
+    public const string STATE_OPENED = 'opened';
+
+    public const string STATE_ASSIGNED = 'assigned';
+
+    public const string STATE_CLOSED = 'closed';
 
     private string $state;
 
-    /**
-     * @var string[]
-     */
     private static array $validStates = [
         self::STATE_CREATED,
         self::STATE_OPENED,
@@ -32,7 +33,7 @@ class State implements \Stringable
         $this->state = $state;
     }
 
-    private static function ensureIsValidState(string $state)
+    private static function ensureIsValidState(string $state): void
     {
         if (!in_array($state, self::$validStates)) {
             throw new InvalidArgumentException('Invalid state given');
